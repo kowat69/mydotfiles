@@ -72,6 +72,9 @@ if(ddc_status) then
     capablilities = require("ddc_source_lsp").make_client_capabilities()
 end
 
+nvim_lsp.docker_compose_language_service.setup{}
+nvim_lsp.dockerls.setup{}
+
 nvim_lsp.denols.setup({
   capabilities = capabilities,
 })

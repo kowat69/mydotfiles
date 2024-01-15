@@ -11,6 +11,7 @@ local has = function(x)
   return vim.fn.has(x) == 1
 end
 local is_mac = has "macunix"
+local is_linux = has "unix"
 local is_win = has "win32"
 
 if is_mac then
@@ -18,4 +19,7 @@ if is_mac then
 end
 if is_win then
   require('windows')
+end
+if is_linux then
+    require('windows')
 end
