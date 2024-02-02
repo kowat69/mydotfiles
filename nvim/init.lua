@@ -2,9 +2,11 @@ vim.loader.enable()
 
 require('options')
 require('base')
-require('highlights')
 require('maps')
-require('lazy_nvim')
+if not vim.g.vscode then
+  require('highlights')
+  require('lazy_nvim')
+end
 
 
 local has = function(x)
