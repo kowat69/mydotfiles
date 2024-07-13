@@ -82,7 +82,8 @@ nvim_lsp.rust_analyzer.setup{
                 enable = true;
             }
         }
-    }
+    },
+    cmd ={"rust-analyzer"}
 }
 
 nvim_lsp.denols.setup({
