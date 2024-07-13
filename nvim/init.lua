@@ -25,3 +25,6 @@ end
 if is_linux then
     require('windows')
 end
+if vim.g.vscode then
+  require('macos')
+end

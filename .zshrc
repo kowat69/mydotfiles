@@ -12,7 +12,6 @@ fi
 
 # Customize to your needs...
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 if [[ $(command -v exa) ]]; then
   alias e='exa --icons'
   alias l=e
@@ -30,4 +29,4 @@ fi
 alias vim='nvim'
 alias sl='cd'
 
-[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
+#[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
